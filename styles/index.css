@@ -1,0 +1,55 @@
+@font-face {
+  font-family: NotoSerif;
+  src: url(../fonts/NotoSerif.ttf);
+}
+
+:root {
+	--primary-bg-color:	#ffffff;
+	--primary-fg-color:	#1a1a1a;
+	--accent-color: #5f87af;
+	--accent-color-darker: #567ba0;
+
+	--padding: 20px;
+}
+
+body {
+	max-width: 80em;
+	margin: 0 auto;
+	padding: 0 0;
+	font-family: NotoSerif;
+	color: var(--primary-fg-color);
+	background-color: var(--primary-bg-color);
+}
+
+header {
+	display: flex;
+	align-items: center;
+	background-color: var(--accent-color);
+	color: var(--primary-bg-color);
+	justify-content: space-between;
+	padding: 0 var(--padding);
+}
+
+header a {
+	display: block;
+	background: var(--accent-color);
+	color: var(--primary-bg-color);
+	text-decoration: none;
+	padding: 20px 10px;	
+}
+
+header a:hover {
+	background: var(--accent-color-darker);
+}
+
+.links {
+	display: flex;
+}
+
+.main {
+	padding: 0 var(--padding);
+}
+
+footer {
+	padding: 0 var(--padding);
+}
